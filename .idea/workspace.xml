@@ -5,9 +5,12 @@
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Mail/WelcomeMail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/WelcomeMail.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/emails/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/emails/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/users/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/users/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +190,7 @@
       <option name="presentableId" value="Default" />
       <updated>1577870639581</updated>
       <workItem from="1577870661222" duration="31467000" />
-      <workItem from="1578453369950" duration="5182000" />
+      <workItem from="1578453369950" duration="7141000" />
     </task>
     <servers />
   </component>
@@ -223,10 +226,10 @@
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state width="683" height="498" key="SwitcherDM/0.0.1366.732@0.0.1366.732" timestamp="1578070238777" />
-    <state x="262" y="0" width="840" height="730" key="search.everywhere.popup" timestamp="1578456354667">
+    <state x="262" y="0" width="840" height="730" key="search.everywhere.popup" timestamp="1578460307154">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state x="262" y="0" width="840" height="730" key="search.everywhere.popup/0.0.1366.732@0.0.1366.732" timestamp="1578456354667" />
+    <state x="262" y="0" width="840" height="730" key="search.everywhere.popup/0.0.1366.732@0.0.1366.732" timestamp="1578460307154" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

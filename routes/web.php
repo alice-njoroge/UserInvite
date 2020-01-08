@@ -24,3 +24,4 @@ Route::get('/users/invite', 'UsersController@invite_view')->name('invite_view');
 Route::post('/users/invite', 'UsersController@process_invites')->name('process_invite');
 Route::get('/registration/{token}', 'UsersController@registration_view')->name('registration');
 Route::POST('/registration', 'Auth\RegisterController@register')->name('accept');
+Route::delete('/users/{user}','UsersController@destroy')->name('delete_user');

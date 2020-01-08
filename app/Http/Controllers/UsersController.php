@@ -67,4 +67,8 @@ class UsersController extends Controller
         $invite = Invite::where('token', $token)->first();
         return view('auth.register',['invite' => $invite]);
     }
+    public function destroy(User $user){
+        $user->delete();
+        return redirect('/users')->with('success', 'The user has been deleted successfully');
+    }
 }
