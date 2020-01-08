@@ -5,7 +5,9 @@
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Mail/WelcomeMail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/WelcomeMail.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/emails/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/emails/welcome.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +187,7 @@
       <option name="presentableId" value="Default" />
       <updated>1577870639581</updated>
       <workItem from="1577870661222" duration="31467000" />
-      <workItem from="1578453369950" duration="3167000" />
+      <workItem from="1578453369950" duration="5182000" />
     </task>
     <servers />
   </component>

@@ -67,15 +67,14 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        $invite = Invite::where('token', $data['token'])->first();
-        $invite->delete();
-
         $user = User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
-        Mail::to($user)->send(new WelcomeMail());
+        Mail::to($user)->send(new WelcomeMail($user));
+        $invite = Invite::where('token', $data['token'])->first();
+        $invite->delete();
         return $user;
     }
 }
