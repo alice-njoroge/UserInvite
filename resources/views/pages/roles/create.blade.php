@@ -15,8 +15,10 @@
                             <div class="form-group">
                                 @foreach($permissions as $permission)
                                     <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                        <label class="custom-control-label" for="customCheck1">
+                                        <input type="checkbox" class="custom-control-input" value="{{$permission->id}}"
+                                               name="permissions[]"
+                                               id="{{$permission->id}}">
+                                        <label class="custom-control-label" for="{{$permission->id}}">
                                             {{$permission->name}}</label>
                                     </div>
                                 @endforeach

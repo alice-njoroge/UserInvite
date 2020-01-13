@@ -17,7 +17,19 @@ class RolesController extends Controller
     public function create()
     {
         $permissions = Permission::all();
-        return view('pages.roles.create',['permissions'=>$permissions]);
+        return view('pages.roles.create', ['permissions' => $permissions]);
+
+    }
+
+    public function store(Request $request)
+    {
+        $permission = $request->input('permsissions');
+        $name = $request->validate([
+            'name' => 'required'
+        ]);
+        $role = Role::create($name);
+        $role->syncPermissions($permission);
+
 
     }
 }
