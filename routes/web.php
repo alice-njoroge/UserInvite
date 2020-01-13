@@ -25,3 +25,5 @@ Route::post('/users/invite', 'UsersController@process_invites')->name('process_i
 Route::get('/registration/{token}', 'UsersController@registration_view')->name('registration');
 Route::POST('/registration', 'Auth\RegisterController@register')->name('accept');
 Route::delete('/users/{user}','UsersController@destroy')->name('delete_user');
+
+Route::resource('roles','RolesController');
