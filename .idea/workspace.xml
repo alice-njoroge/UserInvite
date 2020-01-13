@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="915a3719-8808-45ac-a3e1-f8b6294bcb26" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/RolesController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/permission.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_01_13_042859_create_permission_tables.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/pages/roles/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/InviteUsers.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/InviteUsers.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/PermissionsTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/roles/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RolesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RolesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/roles/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/roles/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,6 +152,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -165,7 +161,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -197,7 +193,8 @@
       <updated>1577870639581</updated>
       <workItem from="1577870661222" duration="31467000" />
       <workItem from="1578453369950" duration="8719000" />
-      <workItem from="1578888749645" duration="3862000" />
+      <workItem from="1578888749645" duration="4307000" />
+      <workItem from="1578894196301" duration="3162000" />
     </task>
     <servers />
   </component>
@@ -228,18 +225,18 @@
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state width="1320" height="172" key="GridCell.Tab.0.right/0.0.1366.732@0.0.1366.732" timestamp="1578453866222" />
-    <state x="106" y="0" key="SettingsEditor" timestamp="1578117030494">
+    <state x="106" y="0" key="SettingsEditor" timestamp="1578895325740">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state x="106" y="0" key="SettingsEditor/0.0.1366.732@0.0.1366.732" timestamp="1578117030494" />
+    <state x="106" y="0" key="SettingsEditor/0.0.1366.732@0.0.1366.732" timestamp="1578895325740" />
     <state width="683" height="498" key="SwitcherDM" timestamp="1578070238777">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state width="683" height="498" key="SwitcherDM/0.0.1366.732@0.0.1366.732" timestamp="1578070238777" />
-    <state x="262" y="0" width="840" height="730" key="search.everywhere.popup" timestamp="1578892634227">
+    <state x="262" y="0" width="840" height="730" key="search.everywhere.popup" timestamp="1578905091812">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state x="262" y="0" width="840" height="730" key="search.everywhere.popup/0.0.1366.732@0.0.1366.732" timestamp="1578892634227" />
+    <state x="262" y="0" width="840" height="730" key="search.everywhere.popup/0.0.1366.732@0.0.1366.732" timestamp="1578905091812" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -253,6 +250,11 @@
           <url>file://$PROJECT_DIR$/resources/views/pages/users/index.blade.php</url>
           <line>6</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/pages/roles/index.blade.php</url>
+          <line>7</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

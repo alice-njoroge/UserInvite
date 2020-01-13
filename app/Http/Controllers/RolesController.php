@@ -15,6 +15,7 @@ class RolesController extends Controller
 
     public function create()
     {
+        return view('pages.roles.create');
 
     }
 }
