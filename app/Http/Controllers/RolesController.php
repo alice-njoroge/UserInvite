@@ -29,7 +29,6 @@ class RolesController extends Controller
         ]);
         $role = Role::create($name);
         $role->syncPermissions($permission);
-
-
+        return redirect('/roles')->with('success', 'Role created successfully');
     }
 }

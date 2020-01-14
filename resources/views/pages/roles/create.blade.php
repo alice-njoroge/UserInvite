@@ -4,13 +4,29 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <div class="card">
+                @if ($errors->any())
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+                @if(session()->has('message'))
+                    <div class="alert alert-success">
+                        {{ session()->get('message') }}
+                    </div>
+                @endif
+                    <form action="{{action('RolesController@store')}}" method="post">
+
+                    <div class="card">
                     <div class="card-header">Define Name and permissions for the Role</div>
                     <div class="card-body">
-                        <form>
+                            @csrf
                             <div class="form-group">
                                 <label for="text">Name</label>
-                                <input type="text" class="form-control" placeholder="Enter role name">
+                                <input type="text" name="name" class="form-control" placeholder="Enter role name">
                             </div>
                             <div class="form-group">
                                 @foreach($permissions as $permission)
@@ -24,12 +40,13 @@
                                 @endforeach
                             </div>
 
-                        </form>
                     </div>
                     <div class="card-footer">
                         <button type="submit" class="btn btn-primary float-right">Submit</button>
+                        <a href="{{url('/roles')}}" class="btn btn-primary float-left">Back</a>
                     </div>
                 </div>
+                    </form>
             </div>
         </div>
     </div>

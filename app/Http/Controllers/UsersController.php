@@ -7,6 +7,7 @@ use App\User;
 use Illuminate\Http\Request;
 use Notification;
 Use App\Notifications\Invite as InviteNotification;
+use Spatie\Permission\Models\Role;
 use Str;
 use URL;
 use Validator;
@@ -26,7 +27,8 @@ class UsersController extends Controller
 
     public function invite_view()
     {
-        return view('pages.users.invite');
+        $roles= Role::all();
+        return view('pages.users.invite',['roles'=>$roles]);
     }
 
     public function process_invites(Request $request)

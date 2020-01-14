@@ -23,9 +23,23 @@
                             @csrf
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" placeholder="Enter email">
-                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                <input type="email" class="form-control" id="exampleInputEmail1" name="email"
+                                       aria-describedby="emailHelp" placeholder="Enter email">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                                    anyone else.</small>
                             </div>
+                            <div class="card-header">
+                                Assign a role to the User
+                            </div>
+                            @foreach($roles as $role)
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" value="{{$role->id}}"
+                                           name="roles[]"
+                                           id="{{$role->id}}">
+                                    <label class="custom-control-label" for="{{$role->id}}">
+                                        {{$role->name}}</label>
+                                </div>
+                            @endforeach
                             <button type="submit" class="btn btn-success">Send Invitation</button>
                         </form>
 
