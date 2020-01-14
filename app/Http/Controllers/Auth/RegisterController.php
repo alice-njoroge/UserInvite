@@ -74,6 +74,7 @@ class RegisterController extends Controller
         ]);
         Mail::to($user)->send(new WelcomeMail($user));
         $invite = Invite::where('token', $data['token'])->first();
+        $user->syncRoles($invite->role_ids);
         $invite->delete();
         return $user;
     }

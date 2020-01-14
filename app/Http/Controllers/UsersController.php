@@ -34,7 +34,8 @@ class UsersController extends Controller
     public function process_invites(Request $request)
     {
         $validator = Validator::make($request->all(), [
-            'email' => 'required|email|unique:users,email'
+            'email' => 'required|email|unique:users,email',
+            'roles'=>'required'
         ]);
         $validator->after(function ($validator) use ($request) {
             if (Invite::where('email', $request->input('email'))->exists()) {
@@ -51,10 +52,12 @@ class UsersController extends Controller
             $token = Str::random(20);
         } while (Invite::where('token', $token)->first());
 
-        Invite::create([
+       $invite = Invite::create([
             'token' => $token,
-            'email' => $request->input('email')
+            'email' => $request->input('email'),
+            'role_ids'=>$request->input('roles')
         ]);
+       dd($invite);
         $url = URL::temporarySignedRoute(
         //name is the name of the route,
             'registration', now()->addMinutes(300), ['token' => $token]
