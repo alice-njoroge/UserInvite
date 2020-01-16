@@ -27,15 +27,15 @@ class UsersController extends Controller
 
     public function invite_view()
     {
-        $roles= Role::all();
-        return view('pages.users.invite',['roles'=>$roles]);
+        $roles = Role::all();
+        return view('pages.users.invite', ['roles' => $roles]);
     }
 
     public function process_invites(Request $request)
     {
         $validator = Validator::make($request->all(), [
             'email' => 'required|email|unique:users,email',
-            'roles'=>'required'
+            'roles' => 'required'
         ]);
         $validator->after(function ($validator) use ($request) {
             if (Invite::where('email', $request->input('email'))->exists()) {
@@ -46,18 +46,16 @@ class UsersController extends Controller
             return redirect(route('invite_view'))
                 ->withErrors($validator)
                 ->withInput();
-
         }
         do {
             $token = Str::random(20);
         } while (Invite::where('token', $token)->first());
 
-       $invite = Invite::create([
+        $invite = Invite::create([
             'token' => $token,
             'email' => $request->input('email'),
-            'role_ids'=>$request->input('roles')
+            'role_ids' => $request->input('roles')
         ]);
-       dd($invite);
         $url = URL::temporarySignedRoute(
         //name is the name of the route,
             'registration', now()->addMinutes(300), ['token' => $token]
@@ -70,9 +68,11 @@ class UsersController extends Controller
     public function registration_view($token)
     {
         $invite = Invite::where('token', $token)->first();
-        return view('auth.register',['invite' => $invite]);
+        return view('auth.register', ['invite' => $invite]);
     }
-    public function destroy(User $user){
+
+    public function destroy(User $user)
+    {
         $user->delete();
         return redirect('/users')->with('success', 'The user has been deleted successfully');
     }

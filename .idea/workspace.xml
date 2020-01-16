@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="915a3719-8808-45ac-a3e1-f8b6294bcb26" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RolesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RolesController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/roles/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/roles/create.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +192,8 @@
       <workItem from="1577870661222" duration="31467000" />
       <workItem from="1578453369950" duration="8719000" />
       <workItem from="1578888749645" duration="4307000" />
-      <workItem from="1578894196301" duration="14632000" />
+      <workItem from="1578894196301" duration="16528000" />
+      <workItem from="1579148039337" duration="1499000" />
     </task>
     <servers />
   </component>
@@ -206,6 +208,10 @@
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state x="366" y="86" width="624" height="559" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.732@0.0.1366.732" timestamp="1577945909022" />
+    <state x="449" y="124" key="FileChooserDialogImpl" timestamp="1578992497224">
+      <screen x="0" y="0" width="1366" height="732" />
+    </state>
+    <state x="449" y="124" key="FileChooserDialogImpl/0.0.1366.732@0.0.1366.732" timestamp="1578992497224" />
     <state width="1320" height="172" key="GridCell.Tab.0.bottom" timestamp="1578453866223">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
@@ -230,9 +236,13 @@
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state width="683" height="498" key="SwitcherDM/0.0.1366.732@0.0.1366.732" timestamp="1578070238777" />
-    <state x="262" y="0" width="840" height="730" key="search.everywhere.popup" timestamp="1578983507157">
+    <state x="430" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579149546866">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state x="262" y="0" width="840" height="730" key="search.everywhere.popup/0.0.1366.732@0.0.1366.732" timestamp="1578983507157" />
+    <state x="430" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.732@0.0.1366.732" timestamp="1579149546866" />
+    <state x="262" y="0" width="840" height="730" key="search.everywhere.popup" timestamp="1579148278044">
+      <screen x="0" y="0" width="1366" height="732" />
+    </state>
+    <state x="262" y="0" width="840" height="730" key="search.everywhere.popup/0.0.1366.732@0.0.1366.732" timestamp="1579148278044" />
   </component>
 </project>
