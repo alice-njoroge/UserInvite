@@ -1,31 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="915a3719-8808-45ac-a3e1-f8b6294bcb26" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/logo.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/button.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/footer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/header.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/layout.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/message.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/panel.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/promotion.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/promotion/button.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/subcopy.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/table.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/html/themes/default.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/text/button.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/text/footer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/text/header.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/text/layout.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/text/message.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/text/panel.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/text/promotion.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/text/promotion/button.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/text/subcopy.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/mail/text/table.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/vendor/notifications/email.blade.php" afterDir="false" />
+    <list default="true" id="915a3719-8808-45ac-a3e1-f8b6294bcb26" name="Default Changelist" comment="send mails with a logo">
+      <change afterPath="$PROJECT_DIR$/app/Tasks/RemoveInvites.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +193,7 @@
       <workItem from="1578888749645" duration="4307000" />
       <workItem from="1578894196301" duration="16528000" />
       <workItem from="1579148039337" duration="2178000" />
-      <workItem from="1580700794419" duration="6139000" />
+      <workItem from="1580700794419" duration="10155000" />
     </task>
     <task id="LOCAL-00001" summary="chunk permissions in roles create page">
       <created>1579149591353</created>
@@ -223,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579149591353</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="send mails with a logo">
+      <created>1580716149207</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1580716149207</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,17 +218,18 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="chunk permissions in roles create page" />
-    <option name="LAST_COMMIT_MESSAGE" value="chunk permissions in roles create page" />
+    <MESSAGE value="send mails with a logo" />
+    <option name="LAST_COMMIT_MESSAGE" value="send mails with a logo" />
   </component>
   <component name="WindowStateProjectService">
     <state x="366" y="86" width="624" height="559" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1577945909022">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state x="366" y="86" width="624" height="559" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.732@0.0.1366.732" timestamp="1577945909022" />
-    <state x="210" y="0" key="CommitChangelistDialog2" timestamp="1579149591199">
+    <state x="210" y="0" width="1092" height="731" key="CommitChangelistDialog2" timestamp="1580722036928">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state x="210" y="0" key="CommitChangelistDialog2/0.0.1366.732@0.0.1366.732" timestamp="1579149591199" />
+    <state x="210" y="0" width="1092" height="731" key="CommitChangelistDialog2/0.0.1366.732@0.0.1366.732" timestamp="1580722036928" />
     <state x="449" y="124" key="FileChooserDialogImpl" timestamp="1579265739735">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
@@ -263,6 +250,10 @@
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state width="1320" height="172" key="GridCell.Tab.0.right/0.0.1366.732@0.0.1366.732" timestamp="1578453866222" />
+    <state x="318" y="148" key="NewPhpClassDialog" timestamp="1580720387830">
+      <screen x="0" y="0" width="1366" height="732" />
+    </state>
+    <state x="318" y="148" key="NewPhpClassDialog/0.0.1366.732@0.0.1366.732" timestamp="1580720387830" />
     <state x="106" y="0" key="SettingsEditor" timestamp="1578895325740">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
@@ -271,17 +262,17 @@
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state width="683" height="498" key="SwitcherDM/0.0.1366.732@0.0.1366.732" timestamp="1578070238777" />
-    <state x="283" y="98" key="Vcs.Push.Dialog.v2" timestamp="1579149594746">
+    <state x="283" y="79" key="Vcs.Push.Dialog.v2" timestamp="1580716152359">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state x="283" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.732@0.0.1366.732" timestamp="1579149594746" />
+    <state x="283" y="79" key="Vcs.Push.Dialog.v2/0.0.1366.732@0.0.1366.732" timestamp="1580716152359" />
     <state x="430" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579149546866">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state x="430" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.732@0.0.1366.732" timestamp="1579149546866" />
-    <state x="262" y="0" width="840" height="730" key="search.everywhere.popup" timestamp="1579148278044">
+    <state x="262" y="0" width="840" height="730" key="search.everywhere.popup" timestamp="1580721813257">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state x="262" y="0" width="840" height="730" key="search.everywhere.popup/0.0.1366.732@0.0.1366.732" timestamp="1579148278044" />
+    <state x="262" y="0" width="840" height="730" key="search.everywhere.popup/0.0.1366.732@0.0.1366.732" timestamp="1580721813257" />
   </component>
 </project>
